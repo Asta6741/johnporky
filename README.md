@@ -1,30 +1,42 @@
-# Solana tracker design
+# Solana Wallet Tracker
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A clean, interactive front-end for tracking Solana wallet activity. Users can paste in a wallet address to see portfolio details, recent trades, a leaderboard of top performers, and simulated performance stats.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/eamonpham-hotmailcoms-projects/v0-solana-tracker-design)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/aYsGusL1krF)
+## Features
 
-## Overview
+- **Wallet Input Form**  
+  Paste a Solana wallet address to load sample data.
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+- **Portfolio Overview**  
+  Displays total wins, profit percentage, last 5 trades (with win/loss icons), and a sparkline chart.
+
+- **Top Trenchers Leaderboard**  
+  Ranks wallets by ROI, reward amount, and trade count. Includes hover effects and animated sorting tabs.
+
+- **Live Big Wins Feed**  
+  Auto-rotating ticker of recent high-profit plays (fake data).
+
+- **Gambling Stats Panel**  
+  Shows aggregated stats like:
+  - Wallets Tracked
+  - Total SOL Moved Today
+  - Top ROI Wallet
+  - Avg Win Rate
+
+- **Smooth UI**  
+  Uses glassmorphic cards, dark-mode palette, neon glow accents, and scroll-triggered animations.
+
+## Tech Stack
+
+- Built with **Next.js** or **React** (prompt-generated frontend layout)  
+- Uses **sample data**; no live API integration out of the box  
+- Fully styled for real-world feel with polished UX interactions
 
 ## Deployment
 
-Your project is live at:
+Any static or Node.js-capable host can serve the build:
 
-**[https://vercel.com/eamonpham-hotmailcoms-projects/v0-solana-tracker-design](https://vercel.com/eamonpham-hotmailcoms-projects/v0-solana-tracker-design)**
-
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/aYsGusL1krF](https://v0.dev/chat/projects/aYsGusL1krF)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+```bash
+npm install
+npm run build
+npm start
