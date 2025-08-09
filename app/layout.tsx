@@ -4,9 +4,8 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'Solana Wallet Tracker',
+  description: 'Track trades, portfolio, and wins on Solana wallets in real time'
 }
 
 export default function RootLayout({
